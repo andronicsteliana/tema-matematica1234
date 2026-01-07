@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puteri și Radicali</title>
+    <link rel="stylesheet" href="styletema3.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Puteri și Radicali</h1>
+        <p class="subtitle">Clasa a 9-a - Formule și proprietăți</p>
+
+        <h2>I. Proprietăți ale Puterilor</h2>
+
+        <input type="checkbox" id="formule-toggle-1" class="formula-toggle">
+        <label for="formule-toggle-1" class="formula-button">Afișează toate formulele</label>
+        <div class="formula-section">
+            <div class="formula-card">
+                <h3>1. Înmulțirea puterilor cu aceeași bază</h3>
+                <div class="formula">a<sup>m</sup> · a<sup>n</sup> = a<sup>m+n</sup></div>
+                <div class="description">Se păstrează baza și se adună exponenții</div>
+            </div>
+
+            <div class="formula-card">
+                <h3>2. Împărțirea puterilor cu aceeași bază</h3>
+                <div class="formula">a<sup>m</sup> / a<sup>n</sup> = a<sup>m-n</sup></div>
+                <div class="description">Se păstrează baza și se scad exponenții</div>
+            </div>
+
+            <div class="formula-card">
+                <h3>3. Ridicarea unei puteri la putere</h3>
+                <div class="formula">(a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup></div>
+                <div class="description">Se păstrează baza și se înmulțesc exponenții</div>
+            </div>
+
+            <div class="formula-card">
+                <h3>4. Ridicarea unui produs la putere</h3>
+                <div class="formula">(ab)<sup>n</sup> = a<sup>n</sup> · b<sup>n</sup></div>
+                <div class="description">Se ridică fiecare factor la puterea respectivă</div>
+            </div>
+
+            <div class="formula-card">
+                <h3>5. Ridicarea unui raport la putere</h3>
+                <div class="formula">(a/b)<sup>n</sup> = a<sup>n</sup> / b<sup>n</sup></div>
+                <div class="description">Se ridică atât numărătorul cât și numitorul la puterea respectivă</div>
+            </div>
+
+            <div class="formula-card">
+                <h3>6. Puteri cu exponenți speciali</h3>
+                <div class="formula">a<sup>0</sup> = 1 (a ≠ 0)</div>
+                <div class="formula">a<sup>1</sup> = a</div>
+                <div class="formula">a<sup>-n</sup> = 1 / a<sup>n</sup> (a ≠ 0)</div>
+            </div>
+        </div>
+
+        <h2>II. Proprietăți ale Radicalilor</h2>
+
+        <input type="checkbox" id="formule-toggle-2" class="formula-toggle">
+        <label for="formule-toggle-2" class="formula-button">Afișează toate formulele</label>
+        <div class="formula-section">
+            <div class="formula-card">
+                <h3>1. Radicalul unui pătrat</h3>
+                <div class="formula">√(a²) = |a|</div>
+                <div class="description">Rezultatul este modulul numărului (valoarea absolută)</div>
+            </div>
+
+            <div class="formula-card">
+                <h3>2. Radicalul unui produs</h3>
+                <div class="formula">√(ab) = √a · √b</div>
+                <div class="description">Radicalul unui produs este produsul radicalilor (a, b ≥ 0)</div>
+            </div>
+
+            <div class="formula-card">
+                <h3>3. Radicalul unui raport</h3>
+                <div class="formula">√a / √b = √(a/b)</div>
+                <div class="description">Împărțirea radicalilor (a ≥ 0, b > 0)</div>
+            </div>
+
+            <div class="formula-card">
+                <h3>4. Scoaterea factorilor de sub radical</h3>
+                <div class="formula">√(a² · b) = a√b (a ≥ 0)</div>
+                <div class="description">Pătratul perfect se scoate din radical</div>
+            </div>
+
+            <div class="formula-card">
+                <h3>5. Introducerea factorilor sub radical</h3>
+                <div class="formula">a√b = √(a² · b) (a ≥ 0)</div>
+                <div class="description">Factorul se ridică la pătrat când intră sub radical</div>
+            </div>
+
+            <div class="formula-card">
+                <h3>6. Raționalizarea numitorului</h3>
+                <div class="formula">1/√a = √a/a</div>
+                <div class="description">Se înmulțește numărătorul și numitorul cu √a</div>
+            </div>
+        </div>
+
+        <h2>III. Exemple Rezolvate</h2>
+
+        <div class="example">
+            <div class="example-title">Exemplul 1: Înmulțirea puterilor<br>
+                <strong>Calculați:</strong> 2³ · 2⁴
+            </div>
+
+            <input type="checkbox" id="ex1" class="toggle-solution">
+            <label for="ex1" class="toggle-label">Afișează rezolvarea</label>
+
+            <div class="solution-content">
+                <div class="step"><strong>Rezolvare:</strong></div>
+                <div class="step">Folosim formula: a<sup>m</sup> · a<sup>n</sup> = a<sup>m+n</sup></div>
+                <div class="step">2³ · 2⁴ = 2<sup>3+4</sup> = 2⁷</div>
+                <div class="step">2⁷ = 128</div>
+                <div class="solution">Răspuns: 128</div>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example-title">Exemplul 2: Împărțirea puterilor<br>
+                <strong>Calculați:</strong> 5⁸ / 5⁵
+            </div>
+
+            <input type="checkbox" id="ex2" class="toggle-solution">
+            <label for="ex2" class="toggle-label">Afișează rezolvarea</label>
+
+            <div class="solution-content">
+                <div class="step"><strong>Rezolvare:</strong></div>
+                <div class="step">Folosim formula: a<sup>m</sup> / a<sup>n</sup> = a<sup>m-n</sup></div>
+                <div class="step">5⁸ / 5⁵ = 5<sup>8-5</sup> = 5³</div>
+                <div class="step">5³ = 125</div>
+                <div class="solution">Răspuns: 125</div>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example-title">Exemplul 3: Putere la putere<br>
+                <strong>Calculați:</strong> (3²)⁴
+            </div>
+
+            <input type="checkbox" id="ex3" class="toggle-solution">
+            <label for="ex3" class="toggle-label">Afișează rezolvarea</label>
+
+            <div class="solution-content">
+                <div class="step"><strong>Rezolvare:</strong></div>
+                <div class="step">Folosim formula: (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup></div>
+                <div class="step">(3²)⁴ = 3<sup>2·4</sup> = 3⁸</div>
+                <div class="step">3⁸ = 6561</div>
+                <div class="solution">Răspuns: 6561</div>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example-title">Exemplul 4: Simplificare radicali<br>
+                <strong>Calculați:</strong> √50
+            </div>
+
+            <input type="checkbox" id="ex4" class="toggle-solution">
+            <label for="ex4" class="toggle-label">Afișează rezolvarea</label>
+
+            <div class="solution-content">
+                <div class="step"><strong>Rezolvare:</strong></div>
+                <div class="step">Descompunem 50 = 25 · 2</div>
+                <div class="step">√50 = √(25 · 2) = √25 · √2</div>
+                <div class="step">√50 = 5√2</div>
+                <div class="solution">Răspuns: 5√2</div>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example-title">Exemplul 5: Raționalizare<br>
+                <strong>Raționalizați:</strong> 6/√3
+            </div>
+
+            <input type="checkbox" id="ex5" class="toggle-solution">
+            <label for="ex5" class="toggle-label">Afișează rezolvarea</label>
+
+            <div class="solution-content">
+                <div class="step"><strong>Rezolvare:</strong></div>
+                <div class="step">Înmulțim numărătorul și numitorul cu √3:</div>
+                <div class="step">6/√3 = (6 · √3)/(√3 · √3)</div>
+                <div class="step">= 6√3 / 3</div>
+                <div class="step">= 2√3</div>
+                <div class="solution">Răspuns: 2√3</div>
+            </div>
+        </div>
+
+        <h2>IV. Exerciții de Rezolvat</h2>
+
+        <div class="note">
+            <strong>Notă:</strong> Apasă pe butoane pentru a vedea exercițiile pe fiecare nivel de dificultate!
+        </div>
+
+        <h3>Nivel Ușor</h3>
+
+        <input type="checkbox" id="nivel-usor" class="level-button">
+        <label for="nivel-usor" class="level-toggle">Deschide exercițiile nivel UȘOR</label>
+
+        <div class="level-content">
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 1:</div>
+                Calculați: 2³ · 2²
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 2:</div>
+                Calculați: 10⁵ / 10²
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 3:</div>
+                Calculați: (5²)³
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 4:</div>
+                Calculați: √36
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 5:</div>
+                Calculați: √4 · √9
+            </div>
+        </div>
+
+        <h3>Nivel Mediu</h3>
+
+        <input type="checkbox" id="nivel-mediu" class="level-button">
+        <label for="nivel-mediu" class="level-toggle">Deschide exercițiile nivel MEDIU</label>
+
+        <div class="level-content">
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 6:</div>
+                Calculați: (2³)² · 2⁴
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 7:</div>
+                Simplificați: √72
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 8:</div>
+                Calculați: (3 · 4)²
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 9:</div>
+                Raționalizați: 10/√5
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 10:</div>
+                Calculați: 2⁻³
+            </div>
+        </div>
+
+        <h3>Nivel Avansat</h3>
+
+        <input type="checkbox" id="nivel-avansat" class="level-button">
+        <label for="nivel-avansat" class="level-toggle">Deschide exercițiile nivel AVANSAT</label>
+
+        <div class="level-content">
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 11:</div>
+                Simplificați: (2⁴ · 3³) / (2² · 3)
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 12:</div>
+                Calculați: √(8 + 2√15)
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 13:</div>
+                Demonstrați că: (a²)³ · a⁴ = a¹⁰
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 14:</div>
+                Simplificați: (√48 - √12) / √3
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 15:</div>
+                Calculați: (2⁻² + 3⁻¹)⁻¹
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>Sfat pentru examen:</strong> Învață foarte bine regulile de bază ale puterilor și cum se simplifică
+            radicalii - acestea sunt fundamentale pentru toate calculele ulterioare!
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formule și Operații cu Mulțimi</title>
+    <link rel="stylesheet" href="styletema2.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Operații cu Mulțimi</h1>
+        <p class="subtitle">Clasa a 9-a - Formule și proprietăți</p>
+
+        <h2>I. Notarea Mulțimilor Numerice</h2>
+
+        <input type="checkbox" id="formule-toggle-1" class="formula-toggle">
+        <label for="formule-toggle-1" class="formula-button">Afișează toate formulele</label>
+        <div class="formula-section">
+            <div class="info-box">
+                <strong>Mulțimile numerice fundamentale:</strong>
+            </div>
+
+            <div class="formula-card">
+                <h3>1. Mulțimea numerelor naturale</h3>
+                <div class="formula">ℕ = {0, 1, 2, 3, 4, ...}</div>
+                <!--------- <div class="description">Mulțimea numerelor naturale</div>---->
+
+            </div>
+
+            <div class="formula-card">
+                <h3>2. Mulțimea numerelor întregi</h3>
+                <div class="formula">ℤ = {..., -2, -1, 0, 1, 2, ...}</div>
+                <!---- <div class="description">Mulțimea numerelor întregi</div>---->
+            </div>
+
+            <div class="formula-card">
+                <h3>3. Mulțimea numerelor raționale</h3>
+                <div class="formula">ℚ = {a/b | a ∈ ℤ, b ∈ ℤ, b ≠ 0}</div>
+                <!---- <div class="description">Mulțimea numerelor raționale (fracții)</div>---->
+            </div>
+
+            <div class="formula-card">
+                <h3>4. Mulțimea numerelor reale</h3>
+                <div class="formula">ℝ</div>
+                <!------ <div class="description">Mulțimea numerelor reale (raționale și iraționale)</div>---->
+            </div>
+
+            <div class="formula-card">
+                <h3>Relația de includere</h3>
+                <div class="formula">ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ</div>
+            </div>
+
+        </div>
+        <h2>II. Operații cu Mulțimi</h2>
+
+        <input type="checkbox" id="formule-toggle-2" class="formula-toggle">
+        <label for="formule-toggle-2" class="formula-button">Afișează toate formulele</label>
+        <div class="formula-section">
+
+            <div class="section-content">
+                <div class="formula-card">
+                    <h3>1. Uniunea mulțimilor</h3>
+                    <div class="formula">A ∪ B = {x | x ∈ A sau x ∈ B}</div>
+                    <div class="description">Elementele care sunt în A <strong>sau</strong> în B sau în ambele</div>
+                </div>
+
+                <div class="formula-card">
+                    <h3>2. Intersecția mulțimilor</h3>
+                    <div class="formula">A ∩ B = {x | x ∈ A și x ∈ B}</div>
+                    <div class="description">Elementele care sunt simultan în A <strong>și</strong> în B</div>
+                </div>
+
+                <div class="formula-card">
+                    <h3>3. Diferența mulțimilor</h3>
+                    <div class="formula">A \ B = {x | x ∈ A, x ∉ B}</div>
+                    <div class="description">Elementele care sunt în A, dar <strong>nu</strong> sunt în B</div>
+                </div>
+
+                <div class="formula-card">
+                    <h3>4. Complementul mulțimii</h3>
+                    <div class="formula">A' = U \ A</div>
+                    <div class="description">Unde U este mulțimea universală</div>
+                </div>
+
+                <div class="formula-card">
+                    <h3>5. Mulțimea vidă</h3>
+                    <div class="formula">∅ = { }</div>
+                    <div class="description">Mulțimea care nu conține niciun element</div>
+                </div>
+            </div>
+        </div>
+        <h2>III. Proprietăți Importante</h2>
+
+        <input type="checkbox" id="formule-toggle-3" class="formula-toggle">
+        <label for="formule-toggle-3" class="formula-button">Afișează toate formulele</label>
+        <div class="formula-section">
+            <div class="section-content">
+                <h3>🔹 Comutativitate</h3>
+                <div class="formula-card">
+                    <div class="formula">A ∪ B = B ∪ A</div>
+                    <div class="formula">A ∩ B = B ∩ A</div>
+                </div>
+
+                <h3>🔹 Asociativitate</h3>
+                <div class="formula-card">
+                    <div class="formula">(A ∪ B) ∪ C = A ∪ (B ∪ C)</div>
+                    <div class="formula">(A ∩ B) ∩ C = A ∩ (B ∩ C)</div>
+                </div>
+
+                <h3>🔹 Distributivitate</h3>
+                <div class="formula-card">
+                    <div class="formula">A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)</div>
+                    <div class="formula">A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)</div>
+                </div>
+
+                <h3>🔹 Legea absorbției</h3>
+                <div class="formula-card">
+                    <div class="formula">A ∪ (A ∩ B) = A</div>
+                    <div class="formula">A ∩ (A ∪ B) = A</div>
+                </div>
+
+                <h3>🔹 Legile lui De Morgan</h3>
+                <div class="formula-card">
+                    <div class="formula">(A ∪ B)' = A' ∩ B'</div>
+                    <div class="formula">(A ∩ B)' = A' ∪ B'</div>
+                    <div class="description">Foarte importante la examene!</div>
+                </div>
+
+                <h3>🔹 Relații între mulțimi</h3>
+                <div class="formula-card">
+                    <div class="formula">A ⊆ B ⟺ (∀x)(x ∈ A ⇒ x ∈ B)</div>
+                    <div class="description">A este submulțime a lui B</div>
+                </div>
+
+                <div class="formula-card">
+                    <div class="formula">A = B ⟺ (A ⊆ B și B ⊆ A)</div>
+                    <div class="description">Egalitatea mulțimilor</div>
+                </div>
+
+                <h3>🔹 Cardinalul mulțimilor finite</h3>
+                <div class="formula-card">
+                    <div class="formula">|A ∪ B| = |A| + |B| - |A ∩ B|</div>
+                    <div class="description">Formula cardinalului uniunii</div>
+                </div>
+
+                <div class="formula-card">
+                    <div class="formula">|A \ B| = |A| - |A ∩ B|</div>
+                    <div class="description">Cardinalul diferenței</div>
+                </div>
+            </div>
+        </div>
+        <h2>IV. Exemple Rezolvate</h2>
+
+        <div class="example">
+            <div class="example-title">Exemplul 1: Operații simple cu mulțimi <br>
+                <strong>Fie: </strong> A = {1, 2, 3, 4}, B = {3, 4, 5} <br>
+                <strong>Calculați:</strong> A ∪ B, A ∩ B, A \ B, B \ A
+
+            </div>
+
+            <input type="checkbox" id="ex1" class="toggle-solution">
+            <label for="ex1" class="toggle-label">Afișează rezolvarea</label>
+
+            <div class="solution-content">
+                <div class="step"><strong>Calculați:</strong></div>
+                <div class="step">a) A ∪ B = {1, 2, 3, 4, 5}</div>
+                <div class="step">b) A ∩ B = {3, 4}</div>
+                <div class="step">c) A \ B = {1, 2}</div>
+                <div class="step">d) B \ A = {5}</div>
+                <div class="solution">Răspuns: Uniunea conține toate elementele, intersecția doar pe cele comune</div>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example-title">Exemplul 2: Calculul cardinalului<br>
+                <strong>Fie:</strong> |A| = 10, |B| = 7, |A ∩ B| = 3 <br>
+                <strong>Calculați:</strong> |A ∪ B|
+
+            </div>
+
+            <input type="checkbox" id="ex2" class="toggle-solution">
+            <label for="ex2" class="toggle-label">Afișează rezolvarea</label>
+
+            <div class="solution-content">
+                <div class="step">Folosim formula: |A ∪ B| = |A| + |B| - |A ∩ B|</div>
+                <div class="step">|A ∪ B| = 10 + 7 - 3</div>
+                <div class="step">|A ∪ B| = 14</div>
+                <div class="solution">Răspuns: 14 elemente</div>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example-title">Exemplul 3: Legile lui De Morgan<br>
+                <strong>Fie:</strong> A și B mulțimi orice <br>
+                <strong>Demonstrați:</strong> (A ∪ B)' = A' ∩ B'
+
+            </div>
+
+            <input type="checkbox" id="ex3" class="toggle-solution">
+            <label for="ex3" class="toggle-label">Afișează rezolvarea</label>
+
+            <div class="solution-content">
+                <div class="step"><strong>Rezolvare:</strong></div>
+                <div class="step">x ∈ (A ∪ B)' ⟺ x ∉ (A ∪ B)</div>
+                <div class="step">⟺ x ∉ A și x ∉ B</div>
+                <div class="step">⟺ x ∈ A' și x ∈ B'</div>
+                <div class="step">⟺ x ∈ A' ∩ B'</div>
+                <div class="solution">Deci (A ∪ B)' = A' ∩ B' ✓</div>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example-title">Exemplul 4: Verificare submulțime<br>
+                <strong>Fie:</strong> A = {2, 4, 6}, B = {1, 2, 3, 4, 5, 6, 7} <br>
+                <strong>Verificați:</strong> Dacă A ⊆ B
+
+            </div>
+
+            <input type="checkbox" id="ex4" class="toggle-solution">
+            <label for="ex4" class="toggle-label">Afișează rezolvarea</label>
+
+            <div class="solution-content">
+                <div class="step"><strong>Rezolvare:</strong></div>
+                <div class="step">Verificăm fiecare element din A:</div>
+                <div class="step">2 ∈ B ✓, 4 ∈ B ✓, 6 ∈ B ✓</div>
+                <div class="step">Toate elementele din A se găsesc în B</div>
+                <div class="solution">Răspuns: DA, A ⊆ B</div>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example-title">Exemplul 5: Problemă aplicativă<br>
+                <strong>Fie:</strong> O clasă de 30 elevi, 18 studiază engleza, 15 studiază franceza, iar 8 studiază
+                ambele limbi. <br>
+                <strong>Calculați:</strong> Câți elevi nu studiază nicio limbă străină?
+
+            </div>
+
+            <input type="checkbox" id="ex5" class="toggle-solution">
+            <label for="ex5" class="toggle-label">Afișează rezolvarea</label>
+
+            <div class="solution-content">
+                <div class="step"><strong>Rezolvare:</strong></div>
+                <div class="step">Notăm: E = elevii la engleză, F = elevii la franceză</div>
+                <div class="step">|E| = 18, |F| = 15, |E ∩ F| = 8</div>
+                <div class="step">|E ∪ F| = |E| + |F| - |E ∩ F|</div>
+                <div class="step">|E ∪ F| = 18 + 15 - 8 = 25 elevi</div>
+                <div class="step">Elevi care nu studiază nicio limbă = 30 - 25 = 5</div>
+                <div class="solution">Răspuns: 5 elevi nu studiază nicio limbă străină</div>
+            </div>
+        </div>
+
+        <h2>V. Exerciții de Rezolvat</h2>
+
+        <div class="note">
+            <strong>Notă:</strong> Apasă pe butoane pentru a vedea exercițiile pe fiecare nivel de dificultate!
+        </div>
+
+        <h3>Nivel Ușor</h3>
+
+        <input type="checkbox" id="nivel-usor" class="level-button">
+        <label for="nivel-usor" class="level-toggle">Deschide exercițiile nivel UȘOR</label>
+
+        <div class="level-content">
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 1:</div>
+                Fie A = {1, 2, 3} și B = {2, 3, 4}. Calculați A ∪ B și A ∩ B.
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 2:</div>
+                Fie A = {a, b, c, d} și B = {c, d, e, f}. Calculați A \ B.
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 3:</div>
+                Determinați cardinalul mulțimii A = {2, 4, 6, 8, 10}.
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 4:</div>
+                Verificați dacă {1, 2} ⊆ {1, 2, 3, 4, 5}.
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 5:</div>
+                Scrieți mulțimea numerelor naturale mai mici decât 6.
+            </div>
+        </div>
+
+        <h3>Nivel Mediu</h3>
+
+        <input type="checkbox" id="nivel-mediu" class="level-button">
+        <label for="nivel-mediu" class="level-toggle">Deschide exercițiile nivel MEDIU</label>
+
+        <div class="level-content">
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 6:</div>
+                Dacă |A| = 12, |B| = 8, |A ∩ B| = 5, calculați |A ∪ B|.
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 7:</div>
+                Fie U = {1, 2, 3, 4, 5, 6} și A = {2, 4, 6}. Calculați A' (complementul lui A).
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 8:</div>
+                Verificați legea comutativității pentru A = {1, 2} și B = {2, 3}.
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 9:</div>
+                Fie A = {x ∈ ℕ | x < 5} și B={x ∈ ℕ | 2 ≤ x ≤ 6}. Calculați A ∩ B. </div>
+
+                    <div class="exercise">
+                        <div class="exercise-number">Exercițiul 10:</div>
+                        Demonstrați că A ∩ A = A pentru orice mulțime A.
+                    </div>
+            </div>
+
+            <h3>Nivel Avansat</h3>
+
+            <input type="checkbox" id="nivel-avansat" class="level-button">
+            <label for="nivel-avansat" class="level-toggle">Deschide exercițiile nivel AVANSAT</label>
+
+            <div class="level-content">
+                <div class="exercise">
+                    <div class="exercise-number">Exercițiul 11:</div>
+                    Verificați legea lui De Morgan: (A ∪ B)' = A' ∩ B' pentru A = {1, 2} și B = {2, 3}, unde U = {1, 2,
+                    3, 4}.
+                </div>
+
+                <div class="exercise">
+                    <div class="exercise-number">Exercițiul 12:</div>
+                    Demonstrați că A ∪ (A ∩ B) = A (legea absorbției).
+                </div>
+
+                <div class="exercise">
+                    <div class="exercise-number">Exercițiul 13:</div>
+                    Într-un grup de 50 persoane, 30 vorbesc engleza, 25 vorbesc franceza, 20 vorbesc germana. 15 vorbesc
+                    engleza și franceza, 10 vorbesc franceza și germana, 12 vorbesc engleza și germana, iar 5 vorbesc
+                    toate cele 3 limbi. Câte persoane nu vorbesc nicio limbă străină?
+                </div>
+
+                <div class="exercise">
+                    <div class="exercise-number">Exercițiul 14:</div>
+                    Verificați distributivitatea: A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) pentru A = {1, 2, 3}, B = {2, 3, 4}, C
+                    = {3, 4, 5}.
+                </div>
+
+                <div class="exercise">
+                    <div class="exercise-number">Exercițiul 15:</div>
+                    Demonstrați că dacă A ⊆ B și B ⊆ C, atunci A ⊆ C (tranzitivitatea includerii).
+                </div>
+            </div>
+
+            <div class="note">
+                <strong>Sfat pentru examen:</strong> Învață foarte bine Legile lui De Morgan și formula cardinalului
+                uniunii - apar cel mai des la teste!
+            </div>
+
+        </div>
+
+</body>
+
+</html>

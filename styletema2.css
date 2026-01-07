@@ -1,0 +1,472 @@
+   * {/* Reset CSS */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {/* Stil general pentru corpul paginii */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {/* Container principal */
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+        }
+
+        h1 {/* Titlu principal */
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        h1::before {/* Iconiță înaintea titlului */
+            content: "📚 ";
+        }
+
+        .subtitle {/* Subtitlu */
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        h2 {/* Titluri de secțiuni */
+            color: #764ba2;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h2::before {/* Iconiță înaintea titlurilor de secțiuni */
+            margin-right: 10px;
+        }
+
+        h2:nth-of-type(1)::before {/* Prima secțiune */
+            content: "📐 ";
+        }
+
+        h2:nth-of-type(2)::before {/* A doua secțiune */
+            content: "✏️ ";
+        }
+
+        h2:nth-of-type(3)::before {/* A treia secțiune */
+            content: "📝 ";
+        }
+
+        h3 {/* Subtitluri */
+            color: #667eea;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .formula-card {/* Card pentru formule */
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .formula-card:hover {/* Efect hover pentru cardurile de formule */
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .formula {/* Stil pentru formule */
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #764ba2;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .example {/* Stil pentru exemple */
+            background: #fff5e6;
+            border-left: 4px solid #ff9800;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .example:hover {/* Efect hover pentru exemple */
+            box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+        }
+
+        .example-title {/* Titlu pentru exemple */
+            font-weight: bold;
+            color: #ff9800;
+            margin-bottom: 10px;
+        }
+
+        .example-title::before {/* Iconiță înaintea titlului de exemplu */
+            content: "💡 ";
+        }
+
+        .exercise {/* Stil pentru exerciții */
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .exercise:hover {/* Efect hover pentru exerciții */
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .exercise-number {/* Stil pentru numărul exercițiului */
+            font-weight: bold;
+            color: #4caf50;
+            margin-bottom: 8px;
+        }
+
+        .exercise-number::before {/* Iconiță înaintea numărului exercițiului */
+            content: "✓ ";
+        }
+
+        .step {/* Stil pentru pașii de rezolvare */
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .solution {/* Stil pentru soluții */
+            color: #555;
+            font-style: italic;
+            margin-top: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+        }
+
+        .solution::before {/* Iconiță înaintea soluției */
+            content: "✅ ";
+            font-style: normal;
+        }
+
+        sup {/* Stil pentru notații exponentiale */
+            vertical-align: super;
+            font-size: 0.8em;
+        }
+
+        .note {/* Stil pentru note importante */
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            color: #856404;
+        }
+
+        .note::before {/* Iconiță înaintea notelor importante */
+            content: "💡 ";
+            font-weight: bold;
+        }
+
+        /* Sistem de collapse folosind checkbox */
+        .toggle-solution {/* Toggle rezolvare exerciții */
+            display: none;
+        }
+
+        .solution-content {/* Conținutul soluției */
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+        }
+
+        .toggle-solution:checked + .toggle-label + .solution-content {/* Când este bifat, arată soluția */
+            max-height: 500px;
+            transition: max-height 0.4s ease-in;
+        }
+
+        .toggle-label {/* Eticheta pentru toggle */
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .toggle-label:hover {/* Efect hover pentru eticheta toggle */
+            background: #764ba2;
+            transform: scale(1.05);
+        }
+
+        .toggle-label::before {/* Iconiță înaintea etichetei toggle */
+            content: "👁️ ";
+        }
+
+        .toggle-solution:checked + .toggle-label::before {/* Când este bifat, schimbă culoarea etichetei */
+            content: "👁️ ";
+        }
+
+        .toggle-solution:checked + .toggle-label {/* Culoare etichetei când este bifat */
+            background: #4caf50;
+        }
+
+        /* Butoane pentru nivele */
+        .level-button {/* Buton nivel */
+            display: none;
+        }
+
+        .level-content {/* Conținut nivel */
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+
+        .level-button:checked + .level-toggle + .level-content {/* Când este bifat, arată conținutul nivelului */
+            max-height: 2000px;
+            transition: max-height 0.5s ease-in;
+        }
+
+        .level-toggle {/* Eticheta pentru toggle nivel */
+            display: block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 15px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .level-toggle:hover {/* Efect hover pentru eticheta nivel */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .level-toggle::after {/* Iconiță după eticheta nivel */
+            content: " ▼";
+            font-size: 0.8em;
+        }
+
+        .level-button:checked + .level-toggle::after {/* Când este bifat, schimbă iconița etichetei nivel */
+            content: " ▲";
+        }
+
+        .level-button:checked + .level-toggle {/* Culoare etichetei când este bifat */
+            background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+        }
+#formule-toggle {/* Sistem de collapse folosind checkbox pentru formule */
+    display: none;
+}
+
+#formule-toggle + .formula-button {
+    display: block;/* Buton pentru formule */
+    background: #667eea;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#formule-toggle + .formula-button:hover {/* Efect hover pentru butonul de formule */
+    background: #764ba2;
+}
+
+#formule-toggle:checked + .formula-button + .formula-section {/* Când este bifat, arată secțiunea de formule */
+    max-height: 5000px;
+}
+
+.formula-section {/* Secțiunea de formule */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease-in-out;
+}
+
+
+
+
+
+/* Sistem de collapse folosind checkbox pentru formule */
+.formula-toggle {/* Toggle formule */
+    display: none;
+}
+
+.formula-toggle + .formula-button {/* Buton pentru formule */
+    display: block;
+    background: #667eea;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px 0;
+    transition: all 0.3s;
+}
+
+.formula-toggle + .formula-button:hover {/* Efect hover pentru butonul de formule */
+    background: #764ba2;
+}
+
+.formula-toggle:checked + .formula-button + .formula-section {/* Când este bifat, arată secțiunea de formule */
+    max-height: 5000px;
+}
+
+.formula-section {/* Secțiunea de formule */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+
+/* Toggle rezolvare exerciții */
+.toggle-solution {
+    display: none;
+}
+
+.solution-content {/* Conținutul soluției */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.toggle-solution:checked + .toggle-label + .solution-content {/* Când este bifat, arată soluția */
+    max-height: 500px;
+    transition: max-height 0.4s ease-in;
+}
+
+.toggle-label {/* Eticheta pentru toggle */
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.toggle-label:hover {/* Efect hover pentru eticheta toggle */
+    background: #764ba2;
+    transform: scale(1.05);
+}
+
+.toggle-label::before {/* Iconiță înaintea etichetei toggle */
+    content: "👁️ ";
+}
+
+.toggle-solution:checked + .toggle-label {/* Când este bifat, schimbă culoarea etichetei */
+    background: #4caf50;
+}
+
+/* Butoane pentru nivele de exerciții */
+.level-button {/* Buton nivel */
+    display: none;
+}
+
+.level-content {/* Conținut nivel */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.level-button:checked + .level-toggle + .level-content {/* Când este bifat, arată conținutul nivelului */
+    max-height: 2000px;
+    transition: max-height 0.5s ease-in;
+}
+
+.level-toggle {/* Eticheta pentru toggle nivel */
+    display: block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.level-toggle:hover {/* Efect hover pentru eticheta nivel */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.level-toggle::after {/* Iconiță după eticheta nivel */
+    content: " ▼";
+    font-size: 0.8em;
+}
+
+.level-button:checked + .level-toggle::after {/* Când este bifat, schimbă iconița etichetei nivel */
+    content: " ▲";
+}
+
+.level-button:checked + .level-toggle {/* Culoare etichetei când este bifat */
+    background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+}
+
+
+
+@media (max-width: 900px) {
+  .container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .formula {
+    font-size: 1.15em;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .formula {
+    font-size: 1em;
+    word-wrap: break-word;
+  }
+
+  .toggle-label,
+  .level-toggle {
+    font-size: 0.95em;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,367 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        h1::before {
+            content: "📚 ";
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        h2 {
+            color: #764ba2;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h2::before {
+            margin-right: 10px;
+        }
+
+        h2:nth-of-type(1)::before {
+            content: "⚡ ";
+        }
+
+        h2:nth-of-type(2)::before {
+            content: "√ ";
+        }
+
+        h2:nth-of-type(3)::before {
+            content: "✏️ ";
+        }
+
+        h2:nth-of-type(4)::before {
+            content: "📝 ";
+        }
+
+        h3 {
+            color: #667eea;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .formula-card {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .formula-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .formula {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #764ba2;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .description {
+            color: #666;
+            font-size: 0.95em;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .example {
+            background: #fff5e6;
+            border-left: 4px solid #ff9800;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .example:hover {
+            box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+        }
+
+        .example-title {
+            font-weight: bold;
+            color: #ff9800;
+            margin-bottom: 10px;
+        }
+
+        .example-title::before {
+            content: "💡 ";
+        }
+
+        .exercise {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .exercise:hover {
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .exercise-number {
+            font-weight: bold;
+            color: #4caf50;
+            margin-bottom: 8px;
+        }
+
+        .exercise-number::before {
+            content: "✓ ";
+        }
+
+        .step {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .solution {
+            color: #555;
+            font-style: italic;
+            margin-top: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+        }
+
+        .solution::before {
+            content: "✅ ";
+            font-style: normal;
+        }
+
+        sup {
+            vertical-align: super;
+            font-size: 0.8em;
+        }
+
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            color: #856404;
+        }
+
+        .note::before {
+            content: "💡 ";
+            font-weight: bold;
+        }
+
+        .formula-toggle {
+            display: none;
+        }
+
+        .formula-toggle + .formula-button {
+            display: block;
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            margin: 20px 0;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .formula-toggle + .formula-button:hover {
+            background: #764ba2;
+        }
+
+        .formula-toggle:checked + .formula-button {
+            background: #4caf50;
+        }
+
+        .formula-toggle:checked + .formula-button::after {
+            content: " ▲";
+        }
+
+        .formula-toggle + .formula-button::after {
+            content: " ▼";
+        }
+
+        .formula-toggle:checked + .formula-button + .formula-section {
+            max-height: 5000px;
+        }
+
+        .formula-section {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+        }
+
+        .toggle-solution {
+            display: none;
+        }
+
+        .solution-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+        }
+
+        .toggle-solution:checked + .toggle-label + .solution-content {
+            max-height: 500px;
+            transition: max-height 0.4s ease-in;
+        }
+
+        .toggle-label {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .toggle-label:hover {
+            background: #764ba2;
+            transform: scale(1.05);
+        }
+
+        .toggle-label::before {
+            content: "👁️ ";
+        }
+
+        .toggle-solution:checked + .toggle-label {
+            background: #4caf50;
+        }
+
+        .level-button {
+            display: none;
+        }
+
+        .level-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+
+        .level-button:checked + .level-toggle + .level-content {
+            max-height: 2000px;
+            transition: max-height 0.5s ease-in;
+        }
+
+        .level-toggle {
+            display: block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 15px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .level-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .level-toggle::after {
+            content: " ▼";
+            font-size: 0.8em;
+        }
+
+        .level-button:checked + .level-toggle::after {
+            content: " ▲";
+        }
+
+        .level-button:checked + .level-toggle {
+            background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+        }
+
+
+
+        @media (max-width: 900px) {
+  .container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .formula {
+    font-size: 1.15em;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .formula {
+    font-size: 1em;
+    word-wrap: break-word;
+  }
+
+  .toggle-label,
+  .level-toggle {
+    font-size: 0.95em;
+    padding: 12px;
+  }
+}

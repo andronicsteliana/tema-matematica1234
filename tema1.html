@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formule de Calcul Prescurtat</title>
+    <link rel="stylesheet" href="styletema1.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formule de Calcul Prescurtat</h1>
+        <p class="subtitle">Algebră - Clasa a 7-a și a 8-a</p>
+
+        <h2>I. Formulele de Bază</h2>
+
+        <input type="checkbox" id="formule-toggle" class="formula-toggle">
+        <label for="formule-toggle" class="formula-button">Afișează toate formulele</label>
+
+        <div class="formula-section">
+            <div class="formula-card">
+                <h3>1. Pătratul sumei</h3>
+                <div class="formula">(a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></div>
+            </div>
+
+            <div class="formula-card">
+                <h3>2. Pătratul diferenței</h3>
+                <div class="formula">(a - b)<sup>2</sup> = a<sup>2</sup> - 2ab + b<sup>2</sup></div>
+            </div>
+
+            <div class="formula-card">
+                <h3>3. Diferența pătratelor</h3>
+                <div class="formula">a<sup>2</sup> - b<sup>2</sup> = (a - b)(a + b)</div>
+            </div>
+
+            <div class="formula-card">
+                <h3>4. Cubul sumei</h3>
+                <div class="formula">(a + b)<sup>3</sup> = a<sup>3</sup> + 3a<sup>2</sup>b + 3ab<sup>2</sup> +
+                    b<sup>3</sup></div>
+            </div>
+
+            <div class="formula-card">
+                <h3>5. Cubul diferenței</h3>
+                <div class="formula">(a - b)<sup>3</sup> = a<sup>3</sup> - 3a<sup>2</sup>b + 3ab<sup>2</sup> -
+                    b<sup>3</sup></div>
+            </div>
+
+            <div class="formula-card">
+                <h3>6. Suma cuburilor</h3>
+                <div class="formula">a<sup>3</sup> + b<sup>3</sup> = (a + b)(a<sup>2</sup> - ab + b<sup>2</sup>)</div>
+            </div>
+
+            <div class="formula-card">
+                <h3>7. Diferența cuburilor</h3>
+                <div class="formula">a<sup>3</sup> - b<sup>3</sup> = (a - b)(a<sup>2</sup> + ab + b<sup>2</sup>)</div>
+            </div>
+        </div>
+
+        <h2>II. Exemple Rezolvate</h2>
+
+        <div class="example">
+            <div class="example-title">Exemplul 1: Calculați (x + 3)<sup>2</sup></div>
+
+            <input type="checkbox" id="ex1" class="toggle-solution">
+            <label for="ex1" class="toggle-label">Afișează rezolvarea</label>
+
+            <div class="solution-content">
+                <div class="step"><strong>Rezolvare:</strong></div>
+                <div class="step">Folosim formula: (a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></div>
+                <div class="step">Unde a = x și b = 3</div>
+                <div class="step">(x + 3)<sup>2</sup> = x<sup>2</sup> + 2·x·3 + 3<sup>2</sup></div>
+                <div class="step">(x + 3)<sup>2</sup> = x<sup>2</sup> + 6x + 9</div>
+                <div class="solution">Răspuns: x<sup>2</sup> + 6x + 9</div>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example-title">Exemplul 2: Calculați (2x - 5)<sup>2</sup></div>
+
+            <input type="checkbox" id="ex2" class="toggle-solution">
+            <label for="ex2" class="toggle-label">Afișează rezolvarea</label>
+
+            <div class="solution-content">
+                <div class="step"><strong>Rezolvare:</strong></div>
+                <div class="step">Folosim formula: (a - b)<sup>2</sup> = a<sup>2</sup> - 2ab + b<sup>2</sup></div>
+                <div class="step">Unde a = 2x și b = 5</div>
+                <div class="step">(2x - 5)<sup>2</sup> = (2x)<sup>2</sup> - 2·2x·5 + 5<sup>2</sup></div>
+                <div class="step">(2x - 5)<sup>2</sup> = 4x<sup>2</sup> - 20x + 25</div>
+                <div class="solution">Răspuns: 4x<sup>2</sup> - 20x + 25</div>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example-title">Exemplul 3: Descompuneți în factori x<sup>2</sup> - 16</div>
+
+            <input type="checkbox" id="ex3" class="toggle-solution">
+            <label for="ex3" class="toggle-label">Afișează rezolvarea</label>
+
+            <div class="solution-content">
+                <div class="step"><strong>Rezolvare:</strong></div>
+                <div class="step">Observăm că avem diferența a două pătrate: x<sup>2</sup> - 4<sup>2</sup></div>
+                <div class="step">Folosim formula: a<sup>2</sup> - b<sup>2</sup> = (a - b)(a + b)</div>
+                <div class="step">x<sup>2</sup> - 16 = (x - 4)(x + 4)</div>
+                <div class="solution">Răspuns: (x - 4)(x + 4)</div>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example-title">Exemplul 4: Calculați 49<sup>2</sup> - 1</div>
+
+            <input type="checkbox" id="ex4" class="toggle-solution">
+            <label for="ex4" class="toggle-label">Afișează rezolvarea</label>
+
+            <div class="solution-content">
+                <div class="step"><strong>Rezolvare:</strong></div>
+                <div class="step">Folosim formula diferenței pătratelor:</div>
+                <div class="step">49<sup>2</sup> - 1<sup>2</sup> = (49 - 1)(49 + 1)</div>
+                <div class="step">= 48 × 50</div>
+                <div class="step">= 2400</div>
+                <div class="solution">Răspuns: 2400</div>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example-title">Exemplul 5: Calculați (x + 2)<sup>3</sup></div>
+
+            <input type="checkbox" id="ex5" class="toggle-solution">
+            <label for="ex5" class="toggle-label">Afișează rezolvarea</label>
+
+            <div class="solution-content">
+                <div class="step"><strong>Rezolvare:</strong></div>
+                <div class="step">Folosim formula: (a + b)<sup>3</sup> = a<sup>3</sup> + 3a<sup>2</sup>b +
+                    3ab<sup>2</sup> + b<sup>3</sup></div>
+                <div class="step">(x + 2)<sup>3</sup> = x<sup>3</sup> + 3·x<sup>2</sup>·2 + 3·x·2<sup>2</sup> +
+                    2<sup>3</sup></div>
+                <div class="step">= x<sup>3</sup> + 6x<sup>2</sup> + 12x + 8</div>
+                <div class="solution">Răspuns: x<sup>3</sup> + 6x<sup>2</sup> + 12x + 8</div>
+            </div>
+        </div>
+
+        <h2>III. Exerciții de Rezolvat</h2>
+
+        <div class="note">
+            <strong>Notă:</strong> Apasă pe butoane pentru a vedea exercițiile pe fiecare nivel de dificultate!
+        </div>
+
+        <h3>Nivel Ușor</h3>
+
+        <input type="checkbox" id="nivel-usor" class="level-button">
+        <label for="nivel-usor" class="level-toggle">Deschide exercițiile nivel UȘOR</label>
+
+        <div class="level-content">
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 1:</div>
+                Calculați: (x + 5)<sup>2</sup>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 2:</div>
+                Calculați: (y - 4)<sup>2</sup>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 3:</div>
+                Descompuneți în factori: x<sup>2</sup> - 25
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 4:</div>
+                Calculați: (2a + 1)<sup>2</sup>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 5:</div>
+                Calculați rapid: 51<sup>2</sup> - 49<sup>2</sup>
+            </div>
+        </div>
+
+        <h3>Nivel Mediu</h3>
+
+        <input type="checkbox" id="nivel-mediu" class="level-button">
+        <label for="nivel-mediu" class="level-toggle">Deschide exercițiile nivel MEDIU</label>
+
+        <div class="level-content">
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 6:</div>
+                Calculați: (3x - 2)<sup>2</sup>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 7:</div>
+                Descompuneți în factori: 4x<sup>2</sup> - 9
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 8:</div>
+                Calculați: (x + 1)<sup>3</sup>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 9:</div>
+                Descompuneți în factori: x<sup>3</sup> - 8
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 10:</div>
+                Calculați rapid: 103<sup>2</sup> (Indicație: 103 = 100 + 3)
+            </div>
+        </div>
+
+        <h3>Nivel Avansat</h3>
+
+        <input type="checkbox" id="nivel-avansat" class="level-button">
+        <label for="nivel-avansat" class="level-toggle">Deschide exercițiile nivel AVANSAT</label>
+
+        <div class="level-content">
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 11:</div>
+                Calculați: (2x + 3y)<sup>2</sup>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 12:</div>
+                Descompuneți în factori: 9x<sup>2</sup> - 16y<sup>2</sup>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 13:</div>
+                Calculați: (x - 3)<sup>3</sup>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 14:</div>
+                Descompuneți în factori: 8x<sup>3</sup> + 27
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-number">Exercițiul 15:</div>
+                Simplificați: (x + y)<sup>2</sup> - (x - y)<sup>2</sup>
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>Sfat:</strong> Verificați întotdeauna răspunsurile prin înmulțirea factorilor sau prin dezvoltarea
+            expresiilor!
+        </div>
+
+    </div>
+</body>
+
+</html>
