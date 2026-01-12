@@ -22,22 +22,8 @@
 
 
 
-
-
-
-
-
-:root {/* CSS Variables */
-    --bg-dark: #0b0b0b;
-    --pink-1: #5f6fff;
-    --pink-2: #7ac3ff;
-    --muted: #bdbdbd;
-    --radius: 16px;
-    --maxw: 1100px;
-}
-
 * {/* reset */
-    box-sizing: border-box
+    box-sizing: border-box/* include in dimensiuni padding si border */
 }
 
 html,
@@ -49,21 +35,21 @@ body {/* body and html */
 }
 
 a {/* links */
-    color: inherit;
-    text-decoration: none
+    color: inherit;/* mosteneste culoarea parintelui */
+    text-decoration: none/* fara underline */
 }
 
 .container {/* center content */
-    max-width: var(--maxw);/* 1100px */
-    margin: 0 auto;
-    padding: 0 20px
+    max-width: 1100px;/* 1100px */
+    margin: 0 auto;/* center horizontally */
+    padding: 0 20px/* padding left and right */
 }
 
 /* NAV */
 header {
     background: #fff;
-    padding: 18px 0;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04)
+    padding: 18px 0;/* padding top and bottom */
+    
 }
 
 .nav {
@@ -72,7 +58,7 @@ header {
     justify-content: space-between/* between logo and nav links */;
 }
 
-.logo {
+.logo {/* text logo */
     font-weight: 700;
     color: #333
 }
@@ -83,31 +69,12 @@ header {
     align-items: center;/* center links vertically */
 }
 
-.btn-ghost {/* ghost button */
-    padding: 8px 14px;
-    border-radius: 999px;
-    border: 1px solid rgba(0, 0, 0, 0.08)
-}
-
-.hamburger {/* hamburger menu for mobile */
-    display: none
-}
-
-
-
-
-
-
-
-
-
-
 
 /* HERO */
-.hero {
-    background: var(--bg-dark);
+.hero {/* sectiunea hero */
+    background: #0b0b0b;
     color: white;
-    padding: 56px 0
+   padding: 56px 0
 }
 
 .hero-inner {/* flex container */
@@ -121,7 +88,7 @@ header {
 }
 
 .kicker {/* small top text */
-    color: var(--pink-1);
+    color: #5f6fff;
     font-weight: 700;
     font-size: 22px
 }
@@ -129,7 +96,7 @@ header {
 .hero-title {/* main title */
     font-size: 36px;
     margin: 12px 0 16px;
-    line-height: 1.05
+    line-height: 1.05/* pentru a reduce spatierea dintre linii */
 }
 
 .hero-desc {/* description text */
@@ -142,36 +109,17 @@ header {
     display: inline-block;
     padding: 12px 20px;
     border-radius: 999px;
-    background: var(--pink-1);
+    background: #5f6fff;
     color: white;
     font-weight: 600
 }
 
-.hero-right {/* right side avatar */
-    width: 340px;
+.hero-right {/* right side image */
+      width: 340px;
     display: flex;
     justify-content: center
 
 }
-
-.avatar-wrap {/* avatar circle */
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #b3d0ff, #fff6c2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4)
-}
-
-.avatar {/* avatar image */
-    width: 100%;
-    height: 100%;
-    object-fit: cover
-}
-
 /* COURSES */
 .courses {
     background: linear-gradient(180deg, #b3daff 0%, #9dd9ff 40%, #7db3ff 100%);
@@ -185,13 +133,13 @@ header {
     gap: 5px
 }
 
-.course-item {
+.course-item {/* individual course */
     text-align: center;
     padding: 10px
     
 }
 
-.section-title {
+.section-title {/* titlul sectiunilor */
     text-align: center;
     font-size: 26px;
     margin-bottom: 18px;
@@ -199,19 +147,19 @@ header {
 }
 
 /* PROMO */
-.promo {
-    background: var(--bg-dark);
+.promo {/* sectiunea promo */
+    background: #0b0b0b;
     padding: 54px 0;
     color: rgb(0, 0, 0)
 }
 
-.promo-grid {
+.promo-grid {/* grila de promotii */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px
 }
 
-.promo-card {
+.promo-card {/* card individual de promotie */
     background: linear-gradient(135deg, #e8fcff, #def6ff);
     padding: 22px;
     border-radius: 14px;
@@ -219,52 +167,21 @@ header {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35)
 }
 
-.promo-card h5 {
+.promo-card h5 {/* titlu promotie */
     font-weight: 700;
     color: #333
 }
 
-/* FREE COURSES */
-.free-courses {
-    background: linear-gradient(180deg, #ffd9e8, #ffc5da);
-    padding: 44px 0
-}
 
-.cards-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px
-}
-
-.card {
-    background: white;
-    padding: 18px;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-    text-align: center
-}
-
-.card img {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 12px
-}
-
-.card p {
-    color: var(--muted);
-    font-size: 14px
-}
 
 /* STATS */
-.stats {
-    background: var(--bg-dark);
+.stats {/* sectiunea statistici */
+    background: #0b0b0b;
     color: white;
     padding: 42px 0
 }
 
-.stats-grid {
+.stats-grid {/* grila de statistici */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
@@ -272,7 +189,7 @@ header {
     margin: 0 auto
 }
 
-.stat {
+.stat {/* card individual de statistica */
     background: linear-gradient(135deg, #e6f3ff, #dae9ff);
     padding: 18px;
     border-radius: 12px;
@@ -281,66 +198,75 @@ header {
 }
 
 /* TESTIMONIALS */
-.testimonials {
+.testimonials {/* sectiunea testimoniale */
     background: linear-gradient(180deg, #f0f4ff, #e7efff);
     padding: 42px 0
 }
 
-.test-grid {
+.test-grid {/* grila de testimoniale */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px
 }
 
-.testimonial {
+.testimonial {/* card individual de testimonial */
     background: white;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06)
 }
 
-.test-name {
-    color: var(--pink-1);
+.test-name {/* numele celui care ofera testimonialul */
+    color: #5f6fff;
     font-weight: 700;
     margin-top: 12px
 }
 
 /* CONTACT */
-.contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.contact {/* sectiunea contact */
+    background: #f9f9f9;
+  padding: 48px 0;
+}
+
+.contact-wrapper {/* continutul sectiunii contact */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.contact {/* sectiunea contact */
     gap: 18px;
     padding: 48px 0
 }
 
-.contact-left {
+.contact-left {/* partea stanga cu text */
     background: linear-gradient(180deg, #9dc6ff, #c5d2ff);
     padding: 28px;
     border-radius: 12px;
     color: #111
 }
 
-.contact-right {
+.contact-right {/* partea dreapta cu formular */
     background: #f3f3f3;
     padding: 28px;
     border-radius: 12px
 }
 
-.field {
+.field {/* camp formular */
     display: flex;
     flex-direction: column;
     margin-bottom: 12px
 }
 
 .input,
-textarea {
+textarea {/* campuri input si textarea */
     padding: 10px;
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.08);
     font-size: 14px
 }
 
-.btn-primary {
+.btn-primary {/* buton trimitere formular */
     display: inline-block;
     padding: 12px 18px;
     border-radius: 999px;
@@ -350,7 +276,7 @@ textarea {
 }
 
 /* FOOTER */
-footer {
+footer {/*  pentru contentul din footer */
     background: #0f0f0f;
     color: #bdbdbd;
     padding: 24px 0;
@@ -358,46 +284,34 @@ footer {
 }
 
 
-    .formula {
-      display: block;
-      font-weight: bold;
-      font-size: 20px;
-      color: #0066cc; /* albastru formule */
-      background-color: #e6f0ff;
-      padding: 8px 12px;
-      border-radius: 5px;
-      margin: 10px 0 20px 0;
-    }
-
-  
-    @media (max-width: 900px) {
+    @media (max-width: 900px) {/* TABLET */
 
   /* HERO */
-  .hero-inner {
+  .hero-inner {/* flex container */
     flex-direction: column;
     text-align: center;
   }
 
-  .hero-right {
+  .hero-right {/* right side image */
     width: 100%;
   }
 
-  .hero-right img {
+  .hero-right img {/* image inside right side */
     max-width: 280px;
   }
 
   /* COURSES */
-  .courses-grid {
+  .courses-grid {/* grid for courses */
     grid-template-columns: repeat(2, 1fr);
   }
 
   /* PROMO */
-  .promo-grid {
+  .promo-grid {/* grila de promotii */
     grid-template-columns: 1fr 1fr;
   }
 
   /* STATS */
-  .stats-grid {
+  .stats-grid {/* grila de statistici */
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -415,7 +329,7 @@ footer {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 600px) {/* MOBILE */
 
   /* NAV */
   .nav {

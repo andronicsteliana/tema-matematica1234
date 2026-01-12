@@ -3,26 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formule și Operații cu Mulțimi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!---responsive design--->
+    <title>Formule și Operații cu Mulțimi</title><!---titlu pagină--->
     <link rel="stylesheet" href="styletema2.css">
+    <link rel="icon" href="infinit.png" type="image/x-icon"><!---favicon--->
 </head>
 
 <body>
-    <div class="container">
-        <h1>Operații cu Mulțimi</h1>
-        <p class="subtitle">Clasa a 9-a - Formule și proprietăți</p>
+    <div class="container"><!---container principal--->
+        <h1>Operații cu Mulțimi</h1><!---titlu principal--->
+        <p class="subtitle">Clasa a 9-a - Formule și proprietăți</p><!---subtitlu--->
 
-        <h2>I. Notarea Mulțimilor Numerice</h2>
+        <h2>I. Notarea Mulțimilor Numerice</h2><!---subtitlu secțiune--->
 
-        <input type="checkbox" id="formule-toggle-1" class="formula-toggle">
-        <label for="formule-toggle-1" class="formula-button">Afișează toate formulele</label>
-        <div class="formula-section">
-            <div class="info-box">
+        <input type="checkbox" id="formule-toggle-1" class="formula-toggle"><!---checkbox pentru afișare formule--->
+        <label for="formule-toggle-1" class="formula-button">Afișează toate formulele</label><!---buton pentru checkbox--->
+        <div class="formula-section"><!---secțiune formule--->
+            <div class="info-box"><!---cutie informativă--->
                 <strong>Mulțimile numerice fundamentale:</strong>
             </div>
 
-            <div class="formula-card">
+            <div class="formula-card"><!---card formular--->
                 <h3>1. Mulțimea numerelor naturale</h3>
                 <div class="formula">ℕ = {0, 1, 2, 3, 4, ...}</div>
                 <!--------- <div class="description">Mulțimea numerelor naturale</div>---->
@@ -55,12 +56,12 @@
         </div>
         <h2>II. Operații cu Mulțimi</h2>
 
-        <input type="checkbox" id="formule-toggle-2" class="formula-toggle">
-        <label for="formule-toggle-2" class="formula-button">Afișează toate formulele</label>
-        <div class="formula-section">
+        <input type="checkbox" id="formule-toggle-2" class="formula-toggle"><!---checkbox pentru afișare formule--->
+        <label for="formule-toggle-2" class="formula-button">Afișează toate formulele</label><!---buton pentru checkbox--->
+        <div class="formula-section"><!---secțiune formule--->
 
-            <div class="section-content">
-                <div class="formula-card">
+            <div class="section-content"><!---conținut secțiune--->
+                <div class="formula-card"><!---card formular--->
                     <h3>1. Uniunea mulțimilor</h3>
                     <div class="formula">A ∪ B = {x | x ∈ A sau x ∈ B}</div>
                     <div class="description">Elementele care sunt în A <strong>sau</strong> în B sau în ambele</div>
@@ -91,12 +92,12 @@
                 </div>
             </div>
         </div>
-        <h2>III. Proprietăți Importante</h2>
+        <h2>III. Proprietăți Importante</h2><!---subtitlu secțiune--->
 
-        <input type="checkbox" id="formule-toggle-3" class="formula-toggle">
-        <label for="formule-toggle-3" class="formula-button">Afișează toate formulele</label>
-        <div class="formula-section">
-            <div class="section-content">
+        <input type="checkbox" id="formule-toggle-3" class="formula-toggle"><!---checkbox pentru afișare formule--->
+        <label for="formule-toggle-3" class="formula-button">Afișează toate formulele</label><!---buton pentru checkbox--->
+        <div class="formula-section"><!---secțiune formule--->
+            <div class="section-content"><!---conținut secțiune--->
                 <h3>🔹 Comutativitate</h3>
                 <div class="formula-card">
                     <div class="formula">A ∪ B = B ∪ A</div>
@@ -151,7 +152,7 @@
                 </div>
             </div>
         </div>
-        <h2>IV. Exemple Rezolvate</h2>
+        <h2>IV. Exemple Rezolvate</h2><!---subtitlu secțiune--->
 
         <div class="example">
             <div class="example-title">Exemplul 1: Operații simple cu mulțimi <br>
@@ -160,10 +161,10 @@
 
             </div>
 
-            <input type="checkbox" id="ex1" class="toggle-solution">
-            <label for="ex1" class="toggle-label">Afișează rezolvarea</label>
+            <input type="checkbox" id="ex1" class="toggle-solution"><!---checkbox pentru rezolvare--->
+            <label for="ex1" class="toggle-label">Afișează rezolvarea</label><!---buton pentru checkbox--->
 
-            <div class="solution-content">
+            <div class="solution-content"><!---conținut rezolvare--->
                 <div class="step"><strong>Calculați:</strong></div>
                 <div class="step">a) A ∪ B = {1, 2, 3, 4, 5}</div>
                 <div class="step">b) A ∩ B = {3, 4}</div>
@@ -173,15 +174,15 @@
             </div>
         </div>
 
-        <div class="example">
+        <div class="example"><!---exemplu--->
             <div class="example-title">Exemplul 2: Calculul cardinalului<br>
                 <strong>Fie:</strong> |A| = 10, |B| = 7, |A ∩ B| = 3 <br>
                 <strong>Calculați:</strong> |A ∪ B|
 
             </div>
 
-            <input type="checkbox" id="ex2" class="toggle-solution">
-            <label for="ex2" class="toggle-label">Afișează rezolvarea</label>
+            <input type="checkbox" id="ex2" class="toggle-solution"><!---checkbox pentru rezolvare--->
+            <label for="ex2" class="toggle-label">Afișează rezolvarea</label><!---buton pentru checkbox--->
 
             <div class="solution-content">
                 <div class="step">Folosim formula: |A ∪ B| = |A| + |B| - |A ∩ B|</div>
@@ -191,15 +192,15 @@
             </div>
         </div>
 
-        <div class="example">
-            <div class="example-title">Exemplul 3: Legile lui De Morgan<br>
+        <div class="example"><!---exemplu--->
+            <div class="example-title">Exemplul 3: Legile lui De Morgan<br><!---titlu exemplu--->
                 <strong>Fie:</strong> A și B mulțimi orice <br>
                 <strong>Demonstrați:</strong> (A ∪ B)' = A' ∩ B'
 
             </div>
 
-            <input type="checkbox" id="ex3" class="toggle-solution">
-            <label for="ex3" class="toggle-label">Afișează rezolvarea</label>
+            <input type="checkbox" id="ex3" class="toggle-solution"><!---checkbox pentru rezolvare--->
+            <label for="ex3" class="toggle-label">Afișează rezolvarea</label><!---buton pentru checkbox--->
 
             <div class="solution-content">
                 <div class="step"><strong>Rezolvare:</strong></div>
@@ -218,8 +219,8 @@
 
             </div>
 
-            <input type="checkbox" id="ex4" class="toggle-solution">
-            <label for="ex4" class="toggle-label">Afișează rezolvarea</label>
+            <input type="checkbox" id="ex4" class="toggle-solution"><!---checkbox pentru rezolvare--->
+            <label for="ex4" class="toggle-label">Afișează rezolvarea</label><!---buton pentru checkbox--->
 
             <div class="solution-content">
                 <div class="step"><strong>Rezolvare:</strong></div>
@@ -238,8 +239,8 @@
 
             </div>
 
-            <input type="checkbox" id="ex5" class="toggle-solution">
-            <label for="ex5" class="toggle-label">Afișează rezolvarea</label>
+            <input type="checkbox" id="ex5" class="toggle-solution"><!---checkbox pentru rezolvare--->
+            <label for="ex5" class="toggle-label">Afișează rezolvarea</label><!---buton pentru checkbox--->
 
             <div class="solution-content">
                 <div class="step"><strong>Rezolvare:</strong></div>
@@ -254,16 +255,16 @@
 
         <h2>V. Exerciții de Rezolvat</h2>
 
-        <div class="note">
+        <div class="note"><!---cutie notă--->
             <strong>Notă:</strong> Apasă pe butoane pentru a vedea exercițiile pe fiecare nivel de dificultate!
         </div>
 
         <h3>Nivel Ușor</h3>
 
-        <input type="checkbox" id="nivel-usor" class="level-button">
-        <label for="nivel-usor" class="level-toggle">Deschide exercițiile nivel UȘOR</label>
+        <input type="checkbox" id="nivel-usor" class="level-button"><!---checkbox pentru nivel ușor--->
+        <label for="nivel-usor" class="level-toggle">Deschide exercițiile nivel UȘOR</label><!---buton pentru checkbox--->
 
-        <div class="level-content">
+        <div class="level-content"><!---conținut nivel--->
             <div class="exercise">
                 <div class="exercise-number">Exercițiul 1:</div>
                 Fie A = {1, 2, 3} și B = {2, 3, 4}. Calculați A ∪ B și A ∩ B.

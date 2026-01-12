@@ -64,27 +64,27 @@
             content: "📝 ";
         }
 
-        h3 {
+        h3 {/* subtitluri */
             color: #667eea;
             margin-top: 25px;
             margin-bottom: 15px;
         }
 
-        .formula-card {
+        .formula-card {/* card pentru formule */
             background: #f8f9ff;
             border-left: 4px solid #667eea;
             padding: 20px;
             margin: 20px 0;
             border-radius: 8px;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;/* animație la hover */
         }
 
-        .formula-card:hover {
-            transform: translateX(5px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        .formula-card:hover {/* efect la hover */
+            transform: translateX(5px);/* mică deplasare spre dreapta */
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);/*adăugare umbră */
         }
 
-        .formula {
+        .formula {/* stil pentru formule */
             font-size: 1.3em;
             font-weight: bold;
             color: #764ba2;
@@ -92,58 +92,58 @@
             text-align: center;
         }
 
-        .example {
+        .example {/* stil pentru exemple */
             background: #fff5e6;
             border-left: 4px solid #ff9800;
             padding: 20px;
             margin: 20px 0;
             border-radius: 8px;
-            transition: all 0.3s;
+            transition: all 0.3s;/* animație la hover */
         }
 
-        .example:hover {
+        .example:hover {/* efect la hover */
             box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
         }
 
-        .example-title {
+        .example-title {/* titlu pentru exemple */
             font-weight: bold;
             color: #ff9800;
             margin-bottom: 10px;
         }
 
-        .example-title::before {
+        .example-title::before {/* iconiță înaintea titlului de exemplu */
             content: "💡 ";
         }
 
-        .exercise {
+        .exercise {/* stil pentru exerciții */
             background: #e8f5e9;
             border-left: 4px solid #4caf50;
             padding: 15px;
             margin: 15px 0;
             border-radius: 8px;
-            transition: all 0.3s;
+            transition: all 0.3s;/* animație la hover *
         }
 
-        .exercise:hover {
+        .exercise:hover {/* efect la hover */
             box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
         }
 
-        .exercise-number {
+        .exercise-number {/* titlu pentru exerciții */
             font-weight: bold;
             color: #4caf50;
             margin-bottom: 8px;
         }
 
-        .exercise-number::before {
+        .exercise-number::before {/* iconiță înaintea titlului de exercițiu */
             content: "✓ ";
         }
 
-        .step {
+        .step {/* pași în soluții */
             margin: 10px 0;
             padding-left: 20px;
         }
 
-        .solution {
+        .solution {/* stil pentru soluții */
             color: #555;
             font-style: italic;
             margin-top: 10px;
@@ -152,17 +152,17 @@
             border-radius: 5px;
         }
 
-        .solution::before {
+        .solution::before {/* iconiță înaintea soluției */
             content: "✅ ";
             font-style: normal;
         }
 
-        sup {
+        sup {/* stil pentru exponent */
             vertical-align: super;
             font-size: 0.8em;
         }
 
-        .note {
+        .note {/* stil pentru note */
             background: #fff3cd;
             border: 1px solid #ffc107;
             padding: 15px;
@@ -171,28 +171,28 @@
             color: #856404;
         }
 
-        .note::before {
+        .note::before {/* iconiță înaintea notei */
             content: "💡 ";
             font-weight: bold;
         }
 
         /* Sistem de collapse folosind checkbox */
-        .toggle-solution {
+        .toggle-solution {/* ascunde checkbox-ul */
             display: none;
         }
 
-        .solution-content {
+        .solution-content {/* conținutul soluției ascuns inițial */
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.4s ease-out;
+            transition: max-height 0.4s ease-out;/* animație la deschidere */
         }
 
-        .toggle-solution:checked + .toggle-label + .solution-content {
+        .toggle-solution:checked + .toggle-label + .solution-content {/* arată soluția când checkbox-ul e bifat */
             max-height: 500px;
             transition: max-height 0.4s ease-in;
         }
 
-        .toggle-label {
+        .toggle-label {/* eticheta pentru a comuta soluția */
             display: inline-block;
             background: #667eea;
             color: white;
@@ -204,40 +204,40 @@
             font-weight: 500;
         }
 
-        .toggle-label:hover {
+        .toggle-label:hover {/* efect la hover */
             background: #764ba2;
-            transform: scale(1.05);
+            transform: scale(1.05);/* ușoară mărire */
         }
 
-        .toggle-label::before {
+        .toggle-label::before {/* iconiță înaintea etichetei */
             content: "👁️ ";
         }
 
-        .toggle-solution:checked + .toggle-label::before {
+        .toggle-solution:checked + .toggle-label::before {/* iconiță când e bifat */
             content: "👁️ ";
         }
 
-        .toggle-solution:checked + .toggle-label {
+        .toggle-solution:checked + .toggle-label {/* stil când e bifat */
             background: #4caf50;
         }
 
         /* Butoane pentru nivele */
-        .level-button {
+        .level-button {/* ascunde checkbox-urile */
             display: none;
         }
 
-        .level-content {
+        .level-content {/* conținutul nivelelor ascuns inițial */
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.5s ease-out;
+            transition: max-height 0.5s ease-out;/* animație la deschidere */
         }
 
-        .level-button:checked + .level-toggle + .level-content {
+        .level-button:checked + .level-toggle + .level-content {/* arată conținutul când checkbox-ul e bifat */
             max-height: 2000px;
             transition: max-height 0.5s ease-in;
         }
 
-        .level-toggle {
+        .level-toggle {/* eticheta pentru a comuta nivelele */
             display: block;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -252,29 +252,29 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .level-toggle:hover {
+        .level-toggle:hover {/* efect la hover */
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
-        .level-toggle::after {
+        .level-toggle::after {/* săgeată indicatoare */
             content: " ▼";
             font-size: 0.8em;
         }
 
-        .level-button:checked + .level-toggle::after {
+        .level-button:checked + .level-toggle::after {/* săgeată când e bifat */
             content: " ▲";
         }
 
-        .level-button:checked + .level-toggle {
+        .level-button:checked + .level-toggle {/* stil când e bifat */
             background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
         }
 
-        #formule-toggle {
+        #formule-toggle {/* ascunde checkbox-ul pentru formule */
     display: none;
 }
 
-#formule-toggle + .formula-button {
+#formule-toggle + .formula-button {/* stil pentru butonul de formule */
     display: block;
     background: #667eea;
     color: white;
@@ -285,15 +285,15 @@
     margin: 20px 0;
 }
 
-#formule-toggle + .formula-button:hover {
+#formule-toggle + .formula-button:hover {/* efect la hover */
     background: #764ba2;
 }
 
-#formule-toggle:checked + .formula-button + .formula-section {
+#formule-toggle:checked + .formula-button + .formula-section {/* arată secțiunea de formule când e bifat */
     max-height: 5000px;
 }
 
-.formula-section {
+.formula-section {/* secțiunea de formule ascunsă inițial */
     max-height: 0;
     overflow: hidden;
     transition: max-height .4s ease-in-out;

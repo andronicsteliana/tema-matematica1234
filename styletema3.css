@@ -1,20 +1,20 @@
-  * {
+  * {/* Reset and base styles */
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            box-sizing: border-box;/* Include padding and border in element's total width and height */
         }
 
-        body {
+        body {/* Body styles */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            line-height: 1.6;/* Improved readability */
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            min-height: 100vh;/* Full viewport height */
             padding: 20px;
         }
 
-        .container {
-            max-width: 900px;
+        .container {/* pentru a adăuga un fundal alb și o umbră */
+            max-width: 900px;/* Limită lățimea pentru o citire mai ușoară */
             margin: 0 auto;
             background: white;
             border-radius: 15px;
@@ -22,25 +22,25 @@
             padding: 40px;
         }
 
-        h1 {
+        h1 {/* Stiluri pentru titlul principal */
             text-align: center;
             color: #667eea;
             margin-bottom: 10px;
-            font-size: 2.5em;
+            font-size: 2.5em;/* Dimensiune mare pentru titlu */
         }
 
-        h1::before {
+        h1::before {/* Iconiță înaintea titlului */
             content: "📚 ";
         }
 
-        .subtitle {
+        .subtitle {/* Stiluri pentru subtitlu */
             text-align: center;
             color: #666;
             margin-bottom: 40px;
-            font-size: 1.1em;
+            font-size: 1.1em;/* Dimensiune ușor mai mare pentru subtitlu */
         }
 
-        h2 {
+        h2 {/* Stiluri pentru subtitlurile secțiunilor */
             color: #764ba2;
             margin-top: 30px;
             margin-bottom: 20px;
@@ -48,85 +48,85 @@
             border-bottom: 3px solid #667eea;
         }
 
-        h2::before {
+        h2::before {/* Iconițe înaintea subtitlurilor */
             margin-right: 10px;
         }
 
-        h2:nth-of-type(1)::before {
+        h2:nth-of-type(1)::before {/* Prima secțiune */
             content: "⚡ ";
         }
 
-        h2:nth-of-type(2)::before {
+        h2:nth-of-type(2)::before {/* A doua secțiune */
             content: "√ ";
         }
 
-        h2:nth-of-type(3)::before {
+        h2:nth-of-type(3)::before {/* A treia secțiune */
             content: "✏️ ";
         }
 
-        h2:nth-of-type(4)::before {
+        h2:nth-of-type(4)::before {/* A patra secțiune */
             content: "📝 ";
         }
 
-        h3 {
+        h3 {/* Stiluri pentru subtitlurile de nivel 3 */
             color: #667eea;
             margin-top: 25px;
             margin-bottom: 15px;
         }
 
-        .formula-card {
+        .formula-card {/* Card pentru formule */
             background: #f8f9ff;
             border-left: 4px solid #667eea;
             padding: 20px;
             margin: 20px 0;
             border-radius: 8px;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;/* Smooth hover effect */
         }
 
-        .formula-card:hover {
-            transform: translateX(5px);
+        .formula-card:hover {/* Hover effect */
+            transform: translateX(5px);/* mică mișcare la hover */
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
         }
 
-        .formula {
-            font-size: 1.3em;
+        .formula {/* Stiluri pentru formule */
+            font-size: 1.3em;/* Dimensiune mai mare pentru formule */
             font-weight: bold;
             color: #764ba2;
             margin: 10px 0;
             text-align: center;
         }
 
-        .description {
+        .description {/* Stiluri pentru descrierea formulelor */
             color: #666;
-            font-size: 0.95em;
-            margin-top: 10px;
+            font-size: 0.95em;/* Dimensiune ușor mai mică pentru descriere */
+            margin-top: 10px;/* Spațiu deasupra descrierii */
             text-align: center;
         }
 
-        .example {
+        .example {/* Stiluri pentru exemple */
             background: #fff5e6;
             border-left: 4px solid #ff9800;
             padding: 20px;
             margin: 20px 0;
             border-radius: 8px;
-            transition: all 0.3s;
+            transition: all 0.3s;/* miscare lină la hover */
         }
 
-        .example:hover {
+        .example:hover {/* Hover effect */
             box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
         }
 
-        .example-title {
+        .example-title {/* Stiluri pentru titlul exemplelor */
             font-weight: bold;
             color: #ff9800;
             margin-bottom: 10px;
         }
 
-        .example-title::before {
+        .example-title::before {/* Iconiță înaintea titlului exemplelor */
             content: "💡 ";
         }
 
-        .exercise {
+        .exercise {/* Stiluri pentru exerciții */
             background: #e8f5e9;
             border-left: 4px solid #4caf50;
             padding: 15px;
@@ -135,26 +135,26 @@
             transition: all 0.3s;
         }
 
-        .exercise:hover {
+        .exercise:hover {/* Hover effect */
             box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
         }
 
-        .exercise-number {
+        .exercise-number {/* Stiluri pentru numărul exercițiilor */
             font-weight: bold;
             color: #4caf50;
             margin-bottom: 8px;
         }
 
-        .exercise-number::before {
+        .exercise-number::before {/* Iconiță înaintea numărului exercițiilor */
             content: "✓ ";
         }
 
-        .step {
+        .step {/* Stiluri pentru pașii exercițiilor */
             margin: 10px 0;
             padding-left: 20px;
         }
 
-        .solution {
+        .solution {/* Stiluri pentru soluții */
             color: #555;
             font-style: italic;
             margin-top: 10px;
@@ -163,17 +163,17 @@
             border-radius: 5px;
         }
 
-        .solution::before {
+        .solution::before {/* Iconiță înaintea soluțiilor */
             content: "✅ ";
             font-style: normal;
         }
 
-        sup {
+        sup {/* Stiluri pentru textul de suscript */
             vertical-align: super;
-            font-size: 0.8em;
+            font-size: 0.8em;/* Dimensiune mai mică pentru suscript */
         }
 
-        .note {
+        .note {/* Stiluri pentru notițe */
             background: #fff3cd;
             border: 1px solid #ffc107;
             padding: 15px;
@@ -182,122 +182,122 @@
             color: #856404;
         }
 
-        .note::before {
+        .note::before {/* Iconiță înaintea notițelor */
             content: "💡 ";
             font-weight: bold;
         }
 
-        .formula-toggle {
+        .formula-toggle {/* Ascunde checkbox-ul */
             display: none;
         }
 
-        .formula-toggle + .formula-button {
+        .formula-toggle + .formula-button {/* Stiluri pentru butonul de toggle */
             display: block;
             background: #667eea;
             color: white;
             padding: 15px;
             border-radius: 10px;
-            cursor: pointer;
-            text-align: center;
+            cursor: pointer;/* Schimbă cursorul la hover */
+            text-align: center;/* Center text */
             margin: 20px 0;
-            transition: all 0.3s;
+            transition: all 0.3s;/* Smooth transition */
             font-weight: bold;
         }
 
-        .formula-toggle + .formula-button:hover {
+        .formula-toggle + .formula-button:hover {/* Hover effect pentru buton */
             background: #764ba2;
         }
 
-        .formula-toggle:checked + .formula-button {
+        .formula-toggle:checked + .formula-button {/* Stiluri pentru buton când este activat */
             background: #4caf50;
         }
 
-        .formula-toggle:checked + .formula-button::after {
+        .formula-toggle:checked + .formula-button::after {/* Schimbă iconița când este activat */
             content: " ▲";
         }
 
-        .formula-toggle + .formula-button::after {
+        .formula-toggle + .formula-button::after {/* Iconiță pentru buton */
             content: " ▼";
         }
 
-        .formula-toggle:checked + .formula-button + .formula-section {
+        .formula-toggle:checked + .formula-button + .formula-section {/* Arată secțiunea când este activat */
             max-height: 5000px;
         }
 
-        .formula-section {
+        .formula-section {/* Stiluri pentru secțiunea de formule ascunse */
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.4s ease-in-out;
+            transition: max-height 0.4s ease-in-out;/* Smooth transition */
         }
 
-        .toggle-solution {
+        .toggle-solution {/* Ascunde checkbox-ul */
             display: none;
         }
 
-        .solution-content {
+        .solution-content {/* Stiluri pentru conținutul soluțiilor ascunse */
             max-height: 0;
-            overflow: hidden;
+            overflow: hidden;/* Ascunde conținutul inițial */
             transition: max-height 0.4s ease-out;
         }
 
-        .toggle-solution:checked + .toggle-label + .solution-content {
+        .toggle-solution:checked + .toggle-label + .solution-content {/* Arată conținutul când checkbox-ul este bifat */
             max-height: 500px;
-            transition: max-height 0.4s ease-in;
+            transition: max-height 0.4s ease-in;/* Smooth transition */
         }
 
-        .toggle-label {
-            display: inline-block;
-            background: #667eea;
+        .toggle-label {/* Stiluri pentru eticheta toggle */
+            display: inline-block;/* Face eticheta să arate ca un buton */
+            background: #667eea;/* Fundal albastru */
             color: white;
             padding: 10px 20px;
             border-radius: 25px;
-            cursor: pointer;
+            cursor: pointer;/* Schimbă cursorul la hover */
             margin: 10px 0;
             transition: all 0.3s;
-            font-weight: 500;
+            font-weight: 500;/* Font semi-bold */
         }
 
-        .toggle-label:hover {
+        .toggle-label:hover {/* Hover effect pentru etichetă */
             background: #764ba2;
-            transform: scale(1.05);
+            transform: scale(1.05);/* Ușoară mărire la hover */
         }
 
-        .toggle-label::before {
+        .toggle-label::before {/* Iconiță înaintea etichetei */
             content: "👁️ ";
         }
 
-        .toggle-solution:checked + .toggle-label {
+        .toggle-solution:checked + .toggle-label {/* Stiluri pentru etichetă când este activată */
             background: #4caf50;
         }
 
-        .level-button {
+        .level-button {/* Ascunde checkbox-ul */
             display: none;
         }
 
-        .level-content {
+        .level-content {/* Stiluri pentru conținutul nivelurilor ascunse */
             max-height: 0;
-            overflow: hidden;
+            overflow: hidden;/* Ascunde conținutul inițial */
             transition: max-height 0.5s ease-out;
         }
 
-        .level-button:checked + .level-toggle + .level-content {
+        .level-button:checked + .level-toggle + .level-content {/* Arată conținutul când checkbox-ul este bifat */
             max-height: 2000px;
-            transition: max-height 0.5s ease-in;
+            transition: max-height 0.5s ease-in;/* Smooth transition */
         }
 
-        .level-toggle {
+        .level-toggle {/* Stiluri pentru eticheta nivelurilor */
             display: block;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 15px 25px;
             border-radius: 10px;
-            cursor: pointer;
+            cursor: pointer;/* Schimbă cursorul la hover */
             margin: 15px 0;
-            text-align: center;
+            text-align: center;/* Center text */
             font-weight: bold;
-            font-size: 1.1em;
+            font-size: 1.1em;/* Font puțin mai mare */
             transition: all 0.3s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);/*umbră */
         }
 
         .level-toggle:hover {
@@ -305,16 +305,16 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
-        .level-toggle::after {
+        .level-toggle::after {/* Iconiță pentru etichetă */
             content: " ▼";
             font-size: 0.8em;
         }
 
-        .level-button:checked + .level-toggle::after {
+        .level-button:checked + .level-toggle::after {/* Schimbă iconița când este activată */
             content: " ▲";
         }
 
-        .level-button:checked + .level-toggle {
+        .level-button:checked + .level-toggle {/* Stiluri pentru etichetă când este activată */
             background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
         }
 

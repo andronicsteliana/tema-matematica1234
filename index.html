@@ -3,48 +3,50 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" /><!--petru responsive-->
   <title>Matematica Interactivă </title>
   <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" href="infinit.png" type="image/x-icon">
 </head>
 
-<body>
-  <header>
+<body> 
+  <header><!--navigare-->
     <div class="container nav">
-      <div class="logo"> Matematica</div>
+      <div class="logo"> Matematica</div><!--logo-ul site-ului-->
       <nav class="nav-links">
-        
-      </nav>
-
-      <a href="#cursuri" class="button-simple">Lecții</a>
+         <a href="#cursuri" class="button-simple">Lecții</a>
       <a href="#testimoniale" class="button-simple">Testimoniale</a>
       <a href="#contact" class="button-simple">Contact</a>
+      </nav>
+
+     
 
   </header>
 
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-left">
-        <div class="kicker">Învățare modernă</div>
-        <h1 class="hero-title">Descoperă frumusețea matematicii</h1>
+  <section class="hero"><!--sectiunea principala-->
+    <div class="container hero-inner"><!--continutul sectiunii principale-->
+      <div class="hero-left"><!--partea stanga-->
+        <div class="kicker">Învățare modernă</div><!--text mic deasupra titlului-->
+        <h1 class="hero-title">Descoperă frumusețea matematicii</h1><!--titlul principal-->
         <p class="hero-desc">Învățarea devine ușoară atunci când ai o demonstrație pas cu pas. Platforma „Matematica
           Interactivă” te ajută să înțelegi conceptele prin explicații clare și exerciții vizuale.</p>
-        <a href="#cursuri" class="cta">Începe să înveți acum</a>
+        <a href="#cursuri" class="cta">Începe să înveți acum</a><!--buton de call to action-->
       </div>
 
-      <div class="hero-right">
+      <div class="hero-right"><!--partea dreapta-->
         <img src="mate.png" alt="Matematica Interactivă" />
       </div>
 
     </div>
   </section>
 
-  <section id="cursuri" class="courses">
-    <div class="container">
+  <section id="cursuri" class="courses"><!--sectiunea cursuri-->
+    <div class="container"><!--continutul sectiunii cursuri-->
       <h2 class="section-title">Lecțiile noastre</h2>
-      <div class="courses-grid">
+      <div class="courses-grid"><!--grila de cursuri-->
 
-        <div class="course-item">
+        <div class="course-item"><!--element curs-->
           <h4> 1</h4>
           <p><a href="tema1.html">Formule de Calcul Prescurtat</a></p>
 
@@ -66,9 +68,9 @@
     </div>
   </section>
 
-  <section class="promo">
-    <div class="container">
-      <div class="promo-grid">
+  <section class="promo"><!--sectiunea promo-->
+    <div class="container"><!--continutul sectiunii promo-->
+      <div class="promo-grid"><!--grila de promotii-->
         <div class="promo-card">
           <h5>Lecții interactive</h5>
           <p>Explicații și exerciții pentru fiecare temă.</p>
@@ -85,7 +87,7 @@
     </div>
   </section>
 
-  <section class="stats">
+  <section class="stats"><!--sectiunea statistici-->
     <div class="stats-grid">
       <div class="stat">
         <h3>500+</h3>
@@ -106,10 +108,10 @@
     </div>
   </section>
 
-  <section id="testimoniale" class="testimonials">
+  <section id="testimoniale" class="testimonials"><!--sectiunea testimoniale-->
     <div class="container">
-      <h2 class="section-title">Ce spun elevii noștri</h2>
-      <div class="test-grid">
+      <h2 class="section-title">Ce spun elevii noștri</h2><!--titlul sectiunii-->
+      <div class="test-grid"><!--grila de testimoniale-->
         <div class="testimonial">
           <p>„Am reușit să înțeleg în sfârșit teorema lui Thales! Explicațiile sunt foarte clare.”</p>
           <div class="test-name">Maria, clasa a IX-a</div>
@@ -126,33 +128,36 @@
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <div class="container contact-wrapper">
-      <div class="contact-left">
-        <h3>Contactează-ne</h3>
-        <p>Ai întrebări sau idei pentru lecții noi? Scrie-ne și vom reveni în cel mai scurt timp.</p>
-        <p>Email: contact@matematica9.md<br>Telefon: +373 794 66 753</p>
-      </div>
-
-      <div class="contact-right">
-        <form>
-          <div class="field">
-            <label>Nume</label>
-            <input type="text" class="input" required />
-          </div>
-          <div class="field">
-            <label>Email</label>
-            <input type="email" class="input" required />
-          </div>
-          <div class="field">
-            <label>Mesaj</label>
-            <textarea rows="4"></textarea>
-          </div>
-          <button class="btn-primary" type="submit">Trimite mesajul</button>
-        </form>
-      </div>
+  <section id="contact" class="contact"><!--sectiunea contact-->
+  <div class="container contact-wrapper"><!--continutul sectiunii contact-->
+    
+    <div class="contact-left"><!--partea stanga-->
+      <h3>Contactează-ne</h3>
+      <p>Ai întrebări sau idei pentru lecții noi? Scrie-ne și vom reveni în cel mai scurt timp.</p>
+      <p>Email: contact@matematica9.md<br>Telefon: +373 794 66 753</p>
     </div>
-  </section>
+
+    <div class="contact-right"><!--partea dreapta-->
+      <form>
+        <div class="field"><!--câmp formular-->
+          <label>Nume</label><!--eticheta câmpului-->
+          <input type="text" class="input" required /><!--câmp de introducere text-->
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input type="email" class="input" required />
+        </div>
+        <div class="field">
+          <label>Mesaj</label>
+          <textarea rows="4"></textarea>
+        </div>
+        <button class="btn-primary" type="submit">Trimite mesajul</button><!--buton de trimitere-->
+      </form>
+    </div>
+
+  </div>
+</section>
+
 
   <footer>
     © 2025 Matematica Interactivă — Învățăm matematica ușor și cu plăcere!
