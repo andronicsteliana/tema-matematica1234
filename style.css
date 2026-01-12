@@ -376,6 +376,9 @@ footer {/*  pentru contentul din footer */
   }
 
   /* CONTACT */
+     .contact-wrapper {
+        grid-template-columns: 1fr; /* coloana unica pe tableta */
+    }
   .contact-left,
   .contact-right {
     padding: 18px;
